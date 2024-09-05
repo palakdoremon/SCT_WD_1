@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="logo.png" alt="" class="logo"></a>
+        <div class="menu-icon" onclick="toggleMenu(this)">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu" id="menu">
+            <ul class="nav">
+                <li><a href="https://www.starbucks.com/menu">Menu</a></li>
+                <li><a href="https://www.starbucks.com/rewards">Rewards</a></li>
+                <div class="textBox">
+                    <h2><span>COFFEE SHOP</span><br><h3><span>STARBUCKS</span></h3></h2>
+                </div>
+                <li><a href="https://www.starbucks.com/gift">Gift Cards</a></li>
+                <li><a href="#">Delivery</a></li>
+            </ul>
+            <hr>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="first">
+            <img src="image1.png" alt="" class="starbucks">
+            <div class="text">
+                <h1>Grab Your</h1><br>
+                <h1><span>Frappuccino!</span></h1>
+                <p>Introduced in 1995. It consists of coffee or cream base<br>blended with ice and other various ingredients, usually<br>topped with whipped cream and sauce.</p>
+                <button class="order">Order Now</button>
+                <button class="btn">></button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="icon.png" alt="">
+                </div>
+                <div class="inner">
+                    <h3>Sippy Cups</h3>
+                    <p>Are the new norms <br>for iced coffee</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="donut.png" alt="">
+                </div>
+                <div class="inner">
+                    <h3>Donut</h3>
+                    <p>Have a donut with<br>the Frappuccino</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="cookie.png" alt="">
+                </div>
+                <div class="inner">
+                    <h3>Cookies</h3>
+                    <p>Enjoy our sugar <br>free cookies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop" id="shop">
+        <div class="heading">
+            <h1>Some popular variations include<br>vanilla latte, caramel latte, and<br>pumpkin spice latte</h1>
+        </div>
+        <div class="shop-items">
+            <div class="bx">
+                <div class="bx-img">
+                    <img src="image6.png" alt="">
+                    <h3>It is one of the world's largest and most <br>recognizable coffeehouse chains, with thousands of locations worldwide</h3>
+                </div>
+            </div>
+            <div class="bx">
+                <div class="bx-img">
+                    <img src="image5.png" alt=""><br>
+                    <h3><br>Is there a specific type of<br>Starbucks latte you're interested<br>in learning more about?</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+        <h1>Starbucks</h1>
+        <p class="copyrights"><span>&#169</span><b>COFFEE SHOP</b> All rights reserved</p>
+    </footer>
+
+    <script>
+        function toggleMenu(x) {
+            x.classList.toggle("change");
+            const menu = document.getElementById('menu');
+            if (menu.style.display === "block") {
+                menu.style.display = "none"; // Hide the menu
+            } else {
+                menu.style.display = "block"; // Show the menu
+            }
+        }
+    </script>
+</body>
+</html>
